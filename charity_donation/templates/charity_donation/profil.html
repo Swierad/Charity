@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{%  block header %}
+<header>
+      {% include 'charity_donation/header_full.html' %}
+
+    <div class="slogan container container--90">
+        <div class="slogan--item">
+          <h1> Twoje Dane: <br>
+            imię: {{ user.first_name }} <br>
+            nazwisko: {{ user.last_name }} <br>
+            email: {{ user.email }}
+
+{%  endblock %}
+
